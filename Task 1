@@ -1,0 +1,11 @@
+# Declare variables of different data types
+x = 20          # Integer
+y = 5.09        # Float
+name = "John"   # String
+is_admin = True # Boolean
+
+# Print the value and type of each variable
+print("x:", x, type(x))
+print("y:", y, type(y))
+print("name:", name, type(name))
+print("is_admin:", is_admin, type(is_admin))
