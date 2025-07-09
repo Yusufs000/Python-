@@ -1,0 +1,21 @@
+import os
+
+# 1. Create a file
+def create_file(filename):
+    with open(filename, 'w') as file:
+        file.write("This is a newly created file.\n")
+    print(f"File '{filename}' created.")
+
+# 2. Delete a file
+def delete_file(filename):
+    if os.path.exists(filename):
+        os.remove(filename)
+        print(f"File '{filename}' deleted.")
+    else:
+        print(f"File '{filename}' does not exist.")
+
+# 3. Append to a file
+def append_file(filename):
+    with open(filename, 'a') as file:
+        file.write("This line is appended to the file.\n")
+    print(f"Data appended to '{filename}'.")
